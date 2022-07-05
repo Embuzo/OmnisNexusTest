@@ -779,7 +779,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    background: url(../img/hero.jpg) no-repeat center / cover; 
+    background: url(../img/hero_6.jpg) no-repeat center / cover; 
     height: 100%;
     width: 100%;
     display: table;
@@ -874,7 +874,7 @@ html, body {
 }
 
 .portfolio-hero {
-    background: url(../img/portfolio-hero.jpg) no-repeat center / cover;     
+    background: url(../img/portfolio-hero_2.jpg) no-repeat center / cover;     
 }
 
 .blog-hero {
@@ -882,7 +882,7 @@ html, body {
 }
 
 .contact-hero {
-    background: url(../img/contact-hero.jpg) no-repeat center / cover;     
+    background: url(../img/contact-hero_4.jpg) no-repeat center / cover;     
 }
 
 /* SITEMAIN
