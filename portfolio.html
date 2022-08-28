@@ -20,7 +20,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <!-- Favicon
     ================================================== -->
@@ -41,6 +41,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 <body>
@@ -236,8 +237,8 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="social-links">
-                            <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa fa-twitter"></i></a>
-                            <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa fa-instagram"></i></a>
+                            <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa-brands fa-instagram"></i></a>
                             <!-- <a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a>
                             <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
                             <a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a> -->
@@ -266,6 +267,31 @@
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/jquery.shuffle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#343c66",
+        "text": "#cfcfe8"
+        },
+        "button": {
+        "background": "#6fc754"
+        }
+    },
+    "showLink": false,
+    "position": "bottom-right",
+    "type": "opt-in",
+    "content": {
+        "message": "Tämä sivusto käyttää evästeitä parhaaseen käyttökokemukseen.",
+        "dismiss": "OK",
+        "allow": "Hyväksy",
+        "deny": "Hylkää",
+        "policy": "Evästeet"
+    }
+    });
+    </script>
   
 </body>
 </html>
