@@ -20,7 +20,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <!-- Favicon
     ================================================== -->
@@ -36,11 +36,26 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-03PG09DJK5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-03PG09DJK5');
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <style>
+        .cc-revoke{display: none;} 
+    </style>
 
 </head>
 <body>
@@ -120,8 +135,8 @@
                             <a href="https://emergenssi.fi/" class="btn btn-gray">Käy sivulla</a>
 
                             <div class="social-links">
-                                <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa fa-twitter"></i></a>
-                                <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa fa-instagram"></i></a>
+                                <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa-brands fa-instagram"></i></a>
                                 <!-- <a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a>
                                 <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
                                 <a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a> -->
@@ -208,8 +223,8 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <div class="social-links">
-                            <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa fa-twitter"></i></a>
-                            <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa fa-instagram"></i></a>
+                            <a class="twitter-bg" href="https://twitter.com/OmnisNexus"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="instagram" href="https://www.instagram.com/omnisnexus/"><i class="fa-brands fa-instagram"></i></a>
                             <!-- <a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a>
                             <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
                             <a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a> -->
@@ -238,6 +253,32 @@
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/jquery.shuffle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#343c66",
+        "text": "#cfcfe8"
+        },
+        "button": {
+        "background": "#6fc754"
+        }
+    },
+    "theme": "classic",
+    "showLink": false,
+    "position": "bottom-right",
+    "type": "opt-in",
+    "content": {
+        "message": "Tämä sivusto käyttää evästeitä parhaaseen käyttökokemukseen.",
+        "dismiss": "OK",
+        "allow": "Hyväksy",
+        "deny": "Hylkää",
+        "policy": "Evästeet"
+    }
+    });
+    </script>
   
 </body>
 </html>
